@@ -1,4 +1,3 @@
-console.log("JavaScript is working");
 const gradeForm = document.getElementById("gradeForm");
 const result = document.getElementById("result");
 
