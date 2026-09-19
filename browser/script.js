@@ -1,17 +1,18 @@
+console.log("JavaScript is working");
 const gradeForm = document.getElementById("gradeForm");
 const result = document.getElementById("result");
 
-const getGrade = (average) => {
-    if (average => 70) {
+const getGrade = (average) =>{
+    if (average >= 70) {
         return "A";
     }
-    else if (average => 60){
+    else if (average >= 60){
         return "B";
     }
-    else if (average => 50){
+    else if (average >= 50){
         return "C";
     }
-    else if (average => 40){
+    else if (average >= 40){
         return "D";
     }else {
         return "F";
@@ -30,10 +31,10 @@ gradeForm.addEventListener("submit",(event)=>{
     event.preventDefault();
     try{
         const studentName = document.getElementById("studentname").value;
-        const programming = document.getElementById("programming").value;
-        const mathematics = document.getElementById("mathematics").value;
-        const networking = document.getElementById("networking").value;
-        const database = document.getElementById("database").value;
+        const programming = Number(document.getElementById("programming").value);
+        const mathematics = Number(document.getElementById("mathematics").value);
+        const networking = Number(document.getElementById("networking").value);
+        const database = Number(document.getElementById("database").value);
 
         const marks = [programming, mathematics, networking, database];
         for(const mark of marks) {
