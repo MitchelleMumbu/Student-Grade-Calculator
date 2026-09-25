@@ -5,7 +5,6 @@ const r1 = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
 });
-//Function to calculate the grade based on average marks
 const getGrade = (average)=>{
     if(average >= 70){
         return "A";
@@ -23,7 +22,6 @@ const getGrade = (average)=>{
         return "F";     
     } 
 };
-//Function to calculate the total marks from an array of marks
 const calculateTotal = (marks) => {
     let total = 0;  
     for (const mark of marks) {
@@ -31,7 +29,6 @@ const calculateTotal = (marks) => {
     }   
     return total;
 };
-//Ask for the student's name and marks for each subject, then calculate and display the results
 r1.question("Enter student name: ",(studentName)=>{
     try{
         r1.question("Enter Proramming mark: ",(programmingInput)=> {

@@ -1,4 +1,3 @@
-console.log("JavaScript is working");
 const gradeForm = document.getElementById("gradeForm");
 const result = document.getElementById("result");
 
@@ -49,14 +48,14 @@ gradeForm.addEventListener("submit",(event)=>{
 
         result.innerHTML = `
         <h2>Student  Results</h2>
-        <p><strong>Name: <strong> ${studentName}</p>
-        <p><strong>Programming: <strong> ${programming}</p>
-        <p><strong>Mathematics: <strong> ${mathematics}</p> 
-        <p><strong>Networking: <strong> ${networking}</p>
-        <p><strong>Database: <strong> ${database}</p>
-        <p><strong>Total Marks: <strong> ${total}</p>
-        <p><strong>Average Marks: <strong> ${average}</p>
-        <p><strong>Grade: <strong> ${grade}</p>
+        <p><strong>Name: </strong> ${studentName}</p>
+        <p><strong>Programming: </strong> ${programming}</p>
+        <p><strong>Mathematics: </strong> ${mathematics}</p> 
+        <p><strong>Networking: </strong> ${networking}</p>
+        <p><strong>Database: </strong> ${database}</p>
+        <p><strong>Total Marks: </strong> ${total}</p>
+        <p><strong>Average Marks: </strong> ${average}</p>
+        <p><strong>Grade: </strong> ${grade}</p>
         `;
          console.log(`Results for ${studentName}`);
          console.log( `Total: ${total}, Average: ${average}, Grade: ${grade}`);
